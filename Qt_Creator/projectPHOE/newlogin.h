@@ -16,7 +16,6 @@ public:
     ~newlogin();
 
 private slots:
-    void on_pushButton_2_destroyed();
 
     void on_newcanButton_clicked();
 

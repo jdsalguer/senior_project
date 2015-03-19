@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -13,8 +13,15 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        phoe.cpp
+        phoe.cpp \
+    exammenu.cpp \
+    loginsuccess.cpp
 
-HEADERS  += phoe.h
+HEADERS  += phoe.h \
+    exammenu.h \
+    loginsuccess.h
 
-FORMS    += phoe.ui
+FORMS    += \
+    exammenu.ui \
+    loginsuccess.ui \
+    phoe.ui

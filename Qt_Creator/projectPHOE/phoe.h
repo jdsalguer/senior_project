@@ -15,6 +15,9 @@ public:
     explicit phoe(QWidget *parent = 0);
     ~phoe();
 
+private slots:
+    void on_loginButton_clicked();
+
 private:
     Ui::phoe *ui;
 };

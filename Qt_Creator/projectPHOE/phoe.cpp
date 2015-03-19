@@ -12,3 +12,8 @@ phoe::~phoe()
 {
     delete ui;
 }
+
+void phoe::on_loginButton_clicked()
+{
+
+}

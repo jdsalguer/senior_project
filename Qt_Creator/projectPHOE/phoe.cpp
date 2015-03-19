@@ -1,5 +1,7 @@
 #include "phoe.h"
 #include "ui_phoe.h"
+#include "loginsuccess.h"
+#include "newlogin.h"
 
 phoe::phoe(QWidget *parent) :
     QMainWindow(parent),
@@ -15,5 +17,14 @@ phoe::~phoe()
 
 void phoe::on_loginButton_clicked()
 {
+    loginsuccess Loginsuccess;
+    Loginsuccess.setModal(true);
+    Loginsuccess.exec();
+}
 
+void phoe::on_newButton_clicked()
+{
+    newlogin Newlogin;
+    Newlogin.setModal(true);
+    Newlogin.exec();
 }

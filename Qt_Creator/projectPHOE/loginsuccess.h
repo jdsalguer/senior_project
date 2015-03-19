@@ -15,6 +15,9 @@ public:
     explicit loginsuccess(QWidget *parent = 0);
     ~loginsuccess();
 
+private slots:
+    void on_loginsucButton_clicked();
+
 private:
     Ui::loginsuccess *ui;
 };

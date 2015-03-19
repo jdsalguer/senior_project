@@ -15,13 +15,16 @@ TEMPLATE = app
 SOURCES += main.cpp\
         phoe.cpp \
     exammenu.cpp \
-    loginsuccess.cpp
+    loginsuccess.cpp \
+    newlogin.cpp
 
 HEADERS  += phoe.h \
     exammenu.h \
-    loginsuccess.h
+    loginsuccess.h \
+    newlogin.h
 
 FORMS    += \
     exammenu.ui \
     loginsuccess.ui \
-    phoe.ui
+    phoe.ui \
+    newlogin.ui

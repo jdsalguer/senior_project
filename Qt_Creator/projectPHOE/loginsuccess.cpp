@@ -1,5 +1,6 @@
 #include "loginsuccess.h"
 #include "ui_loginsuccess.h"
+#include "exammenu.h"
 
 loginsuccess::loginsuccess(QWidget *parent) :
     QDialog(parent),
@@ -11,4 +12,11 @@ loginsuccess::loginsuccess(QWidget *parent) :
 loginsuccess::~loginsuccess()
 {
     delete ui;
+}
+
+void loginsuccess::on_loginsucButton_clicked()
+{
+    exammenu Exammenu;
+    Exammenu.setModal(true);
+    Exammenu.exec();
 }

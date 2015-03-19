@@ -14,35 +14,43 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QDialogButtonBox>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_loginsuccess
 {
 public:
-    QDialogButtonBox *buttonBox;
     QLabel *label;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout;
+    QPushButton *loginsucButton;
 
     void setupUi(QDialog *loginsuccess)
     {
         if (loginsuccess->objectName().isEmpty())
             loginsuccess->setObjectName(QStringLiteral("loginsuccess"));
         loginsuccess->resize(400, 300);
-        buttonBox = new QDialogButtonBox(loginsuccess);
-        buttonBox->setObjectName(QStringLiteral("buttonBox"));
-        buttonBox->setGeometry(QRect(30, 240, 341, 32));
-        buttonBox->setOrientation(Qt::Horizontal);
-        buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
         label = new QLabel(loginsuccess);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(60, 110, 281, 41));
+        widget = new QWidget(loginsuccess);
+        widget->setObjectName(QStringLiteral("widget"));
+        widget->setGeometry(QRect(110, 200, 158, 25));
+        horizontalLayout = new QHBoxLayout(widget);
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        loginsucButton = new QPushButton(widget);
+        loginsucButton->setObjectName(QStringLiteral("loginsucButton"));
+
+        horizontalLayout->addWidget(loginsucButton);
+
 
         retranslateUi(loginsuccess);
-        QObject::connect(buttonBox, SIGNAL(accepted()), loginsuccess, SLOT(accept()));
-        QObject::connect(buttonBox, SIGNAL(rejected()), loginsuccess, SLOT(reject()));
 
         QMetaObject::connectSlotsByName(loginsuccess);
     } // setupUi
@@ -51,6 +59,7 @@ public:
     {
         loginsuccess->setWindowTitle(QApplication::translate("loginsuccess", "Dialog", 0));
         label->setText(QApplication::translate("loginsuccess", "You have successfully logged in! Click 'OK' to continue...", 0));
+        loginsucButton->setText(QApplication::translate("loginsuccess", "OK", 0));
     } // retranslateUi
 
 };

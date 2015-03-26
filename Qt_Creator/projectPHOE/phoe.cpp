@@ -1,7 +1,7 @@
 #include "phoe.h"
 #include "ui_phoe.h"
 #include "loginsuccess.h"
-#include "newlogin.h"
+#include "consent.h"
 
 phoe::phoe(QWidget *parent) :
     QMainWindow(parent),
@@ -24,7 +24,7 @@ void phoe::on_loginButton_clicked()
 
 void phoe::on_newButton_clicked()
 {
-    newlogin Newlogin;
-    Newlogin.setModal(true);
-    Newlogin.exec();
+    consent Consent;
+    Consent.setModal(true);
+    Consent.exec();
 }

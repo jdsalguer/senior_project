@@ -19,6 +19,10 @@ private slots:
 
     void on_newcanButton_clicked();
 
+    void on_newbakButton_clicked();
+
+    void on_newcreButton_clicked();
+
 private:
     Ui::newlogin *ui;
 };

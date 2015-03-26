@@ -14,6 +14,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QDialog>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
@@ -27,12 +28,16 @@ class Ui_exammenu
 public:
     QLabel *label;
     QWidget *widget;
+    QVBoxLayout *verticalLayout_2;
     QVBoxLayout *verticalLayout;
-    QPushButton *pushButton;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
-    QPushButton *pushButton_4;
-    QPushButton *pushButton_5;
+    QPushButton *fundusexamButton;
+    QPushButton *ocularexamButton;
+    QPushButton *fieldsexamButton;
+    QPushButton *colorexamButton;
+    QPushButton *acuityexamButton;
+    QHBoxLayout *horizontalLayout;
+    QPushButton *genreportButton;
+    QPushButton *menulogoutButton;
 
     void setupUi(QDialog *exammenu)
     {
@@ -44,34 +49,54 @@ public:
         label->setGeometry(QRect(150, 20, 91, 16));
         widget = new QWidget(exammenu);
         widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(70, 50, 261, 181));
-        verticalLayout = new QVBoxLayout(widget);
+        widget->setGeometry(QRect(70, 50, 271, 231));
+        verticalLayout_2 = new QVBoxLayout(widget);
+        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
+        verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        verticalLayout->setContentsMargins(0, 0, 0, 0);
-        pushButton = new QPushButton(widget);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
+        fundusexamButton = new QPushButton(widget);
+        fundusexamButton->setObjectName(QStringLiteral("fundusexamButton"));
 
-        verticalLayout->addWidget(pushButton);
+        verticalLayout->addWidget(fundusexamButton);
 
-        pushButton_2 = new QPushButton(widget);
-        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+        ocularexamButton = new QPushButton(widget);
+        ocularexamButton->setObjectName(QStringLiteral("ocularexamButton"));
 
-        verticalLayout->addWidget(pushButton_2);
+        verticalLayout->addWidget(ocularexamButton);
 
-        pushButton_3 = new QPushButton(widget);
-        pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
+        fieldsexamButton = new QPushButton(widget);
+        fieldsexamButton->setObjectName(QStringLiteral("fieldsexamButton"));
 
-        verticalLayout->addWidget(pushButton_3);
+        verticalLayout->addWidget(fieldsexamButton);
 
-        pushButton_4 = new QPushButton(widget);
-        pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
+        colorexamButton = new QPushButton(widget);
+        colorexamButton->setObjectName(QStringLiteral("colorexamButton"));
 
-        verticalLayout->addWidget(pushButton_4);
+        verticalLayout->addWidget(colorexamButton);
 
-        pushButton_5 = new QPushButton(widget);
-        pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
+        acuityexamButton = new QPushButton(widget);
+        acuityexamButton->setObjectName(QStringLiteral("acuityexamButton"));
 
-        verticalLayout->addWidget(pushButton_5);
+        verticalLayout->addWidget(acuityexamButton);
+
+
+        verticalLayout_2->addLayout(verticalLayout);
+
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        genreportButton = new QPushButton(widget);
+        genreportButton->setObjectName(QStringLiteral("genreportButton"));
+
+        horizontalLayout->addWidget(genreportButton);
+
+        menulogoutButton = new QPushButton(widget);
+        menulogoutButton->setObjectName(QStringLiteral("menulogoutButton"));
+
+        horizontalLayout->addWidget(menulogoutButton);
+
+
+        verticalLayout_2->addLayout(horizontalLayout);
 
 
         retranslateUi(exammenu);
@@ -83,11 +108,13 @@ public:
     {
         exammenu->setWindowTitle(QApplication::translate("exammenu", "Dialog", 0));
         label->setText(QApplication::translate("exammenu", "Choose An Exam", 0));
-        pushButton->setText(QApplication::translate("exammenu", "FUNDUS EXAMINATION", 0));
-        pushButton_2->setText(QApplication::translate("exammenu", "OCCULAR MOVEMENTS", 0));
-        pushButton_3->setText(QApplication::translate("exammenu", "VISUAL FIELDS", 0));
-        pushButton_4->setText(QApplication::translate("exammenu", "COLOR BLINDNESS", 0));
-        pushButton_5->setText(QApplication::translate("exammenu", "VISUAL ACUITY", 0));
+        fundusexamButton->setText(QApplication::translate("exammenu", "FUNDUS EXAMINATION", 0));
+        ocularexamButton->setText(QApplication::translate("exammenu", "OCULAR MOVEMENTS", 0));
+        fieldsexamButton->setText(QApplication::translate("exammenu", "VISUAL FIELDS", 0));
+        colorexamButton->setText(QApplication::translate("exammenu", "COLOR BLINDNESS", 0));
+        acuityexamButton->setText(QApplication::translate("exammenu", "VISUAL ACUITY", 0));
+        genreportButton->setText(QApplication::translate("exammenu", "GENERATE REPORT", 0));
+        menulogoutButton->setText(QApplication::translate("exammenu", "LOG OUT", 0));
     } // retranslateUi
 
 };

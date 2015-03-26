@@ -31,45 +31,67 @@
     <rect>
      <x>70</x>
      <y>50</y>
-     <width>261</width>
-     <height>181</height>
+     <width>271</width>
+     <height>231</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
-     <widget class="QPushButton" name="pushButton">
-      <property name="text">
-       <string>FUNDUS EXAMINATION</string>
-      </property>
-     </widget>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="fundusexamButton">
+        <property name="text">
+         <string>FUNDUS EXAMINATION</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ocularexamButton">
+        <property name="text">
+         <string>OCULAR MOVEMENTS</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="fieldsexamButton">
+        <property name="text">
+         <string>VISUAL FIELDS</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="colorexamButton">
+        <property name="text">
+         <string>COLOR BLINDNESS</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="acuityexamButton">
+        <property name="text">
+         <string>VISUAL ACUITY</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_2">
-      <property name="text">
-       <string>OCCULAR MOVEMENTS</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="pushButton_3">
-      <property name="text">
-       <string>VISUAL FIELDS</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="pushButton_4">
-      <property name="text">
-       <string>COLOR BLINDNESS</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="pushButton_5">
-      <property name="text">
-       <string>VISUAL ACUITY</string>
-      </property>
-     </widget>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="genreportButton">
+        <property name="text">
+         <string>GENERATE REPORT</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="menulogoutButton">
+        <property name="text">
+         <string>LOG OUT</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>

@@ -29,8 +29,8 @@
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>30</y>
+     <x>10</x>
+     <y>40</y>
      <width>551</width>
      <height>381</height>
     </rect>
@@ -38,33 +38,40 @@
    <property name="title">
     <string>New Account</string>
    </property>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>200</x>
       <y>350</y>
-      <width>158</width>
+      <width>239</width>
       <height>25</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
+      <widget class="QPushButton" name="newbakButton">
+       <property name="text">
+        <string>&lt;- BACK</string>
+       </property>
+      </widget>
+     </item>
+     <item>
       <widget class="QPushButton" name="newcreButton">
        <property name="text">
-        <string>Create</string>
+        <string>CREATE</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="newcanButton">
        <property name="text">
-        <string>Cancel</string>
+        <string>CANCEL</string>
        </property>
       </widget>
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>30</x>

@@ -3199,7 +3199,10 @@ release/exammenu.o: ../projectPHOE/exammenu.cpp ../projectPHOE/exammenu.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/QVBoxLayout \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/QWidget \
 		../projectPHOE/fundusdescr.h \
-		../projectPHOE/oculardescr.h
+		../projectPHOE/oculardescr.h \
+		../projectPHOE/fielddescr.h \
+		../projectPHOE/colordescr.h \
+		../projectPHOE/acuitydescr.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\exammenu.o ..\projectPHOE\exammenu.cpp
 
 release/loginsuccess.o: ../projectPHOE/loginsuccess.cpp ../projectPHOE/loginsuccess.h \
@@ -3922,54 +3925,11 @@ release/consent.o: ../projectPHOE/consent.cpp ../projectPHOE/consent.h \
 		C:/Qt/5.4/mingw491_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
 		ui_consent.h \
-		C:/Qt/5.4/mingw491_32/include/QtCore/QVariant \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/QAction \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qaction.h \
-		C:/Qt/5.4/mingw491_32/include/QtGui/qicon.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qactiongroup.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/QApplication \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qapplication.h \
-		C:/Qt/5.4/mingw491_32/include/QtCore/qcoreapplication.h \
-		C:/Qt/5.4/mingw491_32/include/QtCore/qeventloop.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/5.4/mingw491_32/include/QtGui/qguiapplication.h \
-		C:/Qt/5.4/mingw491_32/include/QtGui/qinputmethod.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/QButtonGroup \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qbuttongroup.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/QCheckBox \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qcheckbox.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/QHBoxLayout \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qboxlayout.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlayout.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qgridlayout.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/QHeaderView \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qheaderview.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemview.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractscrollarea.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qframe.h \
-		C:/Qt/5.4/mingw491_32/include/QtCore/qabstractitemmodel.h \
-		C:/Qt/5.4/mingw491_32/include/QtCore/qitemselectionmodel.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemdelegate.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qstyleoption.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractspinbox.h \
-		C:/Qt/5.4/mingw491_32/include/QtGui/qvalidator.h \
-		C:/Qt/5.4/mingw491_32/include/QtCore/qregularexpression.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qslider.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractslider.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qstyle.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabbar.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qrubberband.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/QLabel \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlabel.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/QPushButton \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/QWidget \
 		../projectPHOE/phoe.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/QMainWindow \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qmainwindow.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qicon.h \
 		../projectPHOE/newlogin.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\consent.o ..\projectPHOE\consent.cpp
 
@@ -5550,7 +5510,41 @@ release/colorexam.o: ../projectPHOE/colorexam.cpp ../projectPHOE/colorexam.h \
 		C:/Qt/5.4/mingw491_32/include/QtCore/qfiledevice.h \
 		C:/Qt/5.4/mingw491_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
-		ui_colorexam.h
+		ui_colorexam.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/QVariant \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QAction \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qaction.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qicon.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qactiongroup.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QApplication \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qapplication.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qeventloop.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qguiapplication.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qinputmethod.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QButtonGroup \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qbuttongroup.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QHeaderView \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qheaderview.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemview.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qframe.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qitemselectionmodel.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qstyleoption.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qvalidator.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qregularexpression.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qslider.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractslider.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qstyle.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabbar.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qrubberband.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QLabel \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlabel.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\colorexam.o ..\projectPHOE\colorexam.cpp
 
 release/colorinstruc.o: ../projectPHOE/colorinstruc.cpp ../projectPHOE/colorinstruc.h \
@@ -5658,6 +5652,49 @@ release/colorinstruc.o: ../projectPHOE/colorinstruc.cpp ../projectPHOE/colorinst
 		C:/Qt/5.4/mingw491_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
 		ui_colorinstruc.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/QVariant \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QAction \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qaction.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qicon.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qactiongroup.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QApplication \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qapplication.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qeventloop.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qguiapplication.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qinputmethod.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QButtonGroup \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qbuttongroup.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QHBoxLayout \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qboxlayout.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlayout.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qgridlayout.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QHeaderView \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qheaderview.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemview.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qframe.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qitemselectionmodel.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qstyleoption.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qvalidator.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qregularexpression.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qslider.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractslider.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qstyle.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabbar.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qrubberband.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QLabel \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlabel.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QPushButton \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QWidget \
 		../projectPHOE/colorexam.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\colorinstruc.o ..\projectPHOE\colorinstruc.cpp
 
@@ -5766,6 +5803,49 @@ release/colordescr.o: ../projectPHOE/colordescr.cpp ../projectPHOE/colordescr.h 
 		C:/Qt/5.4/mingw491_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
 		ui_colordescr.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/QVariant \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QAction \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qaction.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qicon.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qactiongroup.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QApplication \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qapplication.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qeventloop.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qguiapplication.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qinputmethod.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QButtonGroup \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qbuttongroup.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QHBoxLayout \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qboxlayout.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlayout.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qgridlayout.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QHeaderView \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qheaderview.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemview.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qframe.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qitemselectionmodel.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qstyleoption.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qvalidator.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qregularexpression.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qslider.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractslider.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qstyle.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabbar.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qrubberband.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QLabel \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlabel.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QPushButton \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QWidget \
 		../projectPHOE/colorinstruc.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\colordescr.o ..\projectPHOE\colordescr.cpp
 
@@ -5873,7 +5953,41 @@ release/acuityexam.o: ../projectPHOE/acuityexam.cpp ../projectPHOE/acuityexam.h 
 		C:/Qt/5.4/mingw491_32/include/QtCore/qfiledevice.h \
 		C:/Qt/5.4/mingw491_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
-		ui_acuityexam.h
+		ui_acuityexam.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/QVariant \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QAction \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qaction.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qicon.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qactiongroup.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QApplication \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qapplication.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qeventloop.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qguiapplication.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qinputmethod.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QButtonGroup \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qbuttongroup.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QHeaderView \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qheaderview.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemview.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qframe.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qitemselectionmodel.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qstyleoption.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qvalidator.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qregularexpression.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qslider.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractslider.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qstyle.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabbar.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qrubberband.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QLabel \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlabel.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\acuityexam.o ..\projectPHOE\acuityexam.cpp
 
 release/acuityinstruc.o: ../projectPHOE/acuityinstruc.cpp ../projectPHOE/acuityinstruc.h \
@@ -5981,6 +6095,49 @@ release/acuityinstruc.o: ../projectPHOE/acuityinstruc.cpp ../projectPHOE/acuityi
 		C:/Qt/5.4/mingw491_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
 		ui_acuityinstruc.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/QVariant \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QAction \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qaction.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qicon.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qactiongroup.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QApplication \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qapplication.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qeventloop.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qguiapplication.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qinputmethod.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QButtonGroup \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qbuttongroup.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QHBoxLayout \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qboxlayout.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlayout.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qgridlayout.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QHeaderView \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qheaderview.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemview.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qframe.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qitemselectionmodel.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qstyleoption.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qvalidator.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qregularexpression.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qslider.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractslider.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qstyle.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabbar.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qrubberband.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QLabel \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlabel.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QPushButton \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QWidget \
 		../projectPHOE/acuityexam.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\acuityinstruc.o ..\projectPHOE\acuityinstruc.cpp
 
@@ -6089,6 +6246,49 @@ release/acuitydescr.o: ../projectPHOE/acuitydescr.cpp ../projectPHOE/acuitydescr
 		C:/Qt/5.4/mingw491_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
 		ui_acuitydescr.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/QVariant \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QAction \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qaction.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qicon.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qactiongroup.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QApplication \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qapplication.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qeventloop.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qguiapplication.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qinputmethod.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QButtonGroup \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qbuttongroup.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QHBoxLayout \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qboxlayout.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlayout.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qgridlayout.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QHeaderView \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qheaderview.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemview.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qframe.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qitemselectionmodel.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qstyleoption.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qvalidator.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qregularexpression.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qslider.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractslider.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qstyle.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabbar.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qrubberband.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QLabel \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlabel.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QPushButton \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QWidget \
 		../projectPHOE/acuityinstruc.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\acuitydescr.o ..\projectPHOE\acuitydescr.cpp
 

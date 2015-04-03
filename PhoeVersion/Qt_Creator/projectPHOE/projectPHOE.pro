@@ -9,10 +9,10 @@ QT       += core gui sql
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = projectPHOE
-    target.files = projectPHOE
-    target.path = /home/root
+#    target.files = projectPHOE
+#    target.path = /home/root
 
-INSTALLS += target
+#INSTALLS += target
 TEMPLATE = app
 
 

@@ -32,7 +32,7 @@ public:
     {
         if (loginerror->objectName().isEmpty())
             loginerror->setObjectName(QStringLiteral("loginerror"));
-        loginerror->resize(400, 300);
+        loginerror->resize(800, 480);
         label = new QLabel(loginerror);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(60, 100, 271, 41));

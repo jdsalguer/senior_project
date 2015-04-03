@@ -31,7 +31,7 @@ class Ui_phoe
 {
 public:
     QWidget *centralWidget;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QLabel *label;
     QHBoxLayout *horizontalLayout;
@@ -51,18 +51,18 @@ public:
     {
         if (phoe->objectName().isEmpty())
             phoe->setObjectName(QStringLiteral("phoe"));
-        phoe->resize(485, 318);
+        phoe->resize(800, 480);
         centralWidget = new QWidget(phoe);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
-        widget = new QWidget(centralWidget);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(90, 60, 298, 131));
-        verticalLayout = new QVBoxLayout(widget);
+        layoutWidget = new QWidget(centralWidget);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(250, 150, 298, 131));
+        verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setSpacing(6);
         verticalLayout->setContentsMargins(11, 11, 11, 11);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName(QStringLiteral("label"));
 
         verticalLayout->addWidget(label);
@@ -70,12 +70,12 @@ public:
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setSpacing(6);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        label_2 = new QLabel(widget);
+        label_2 = new QLabel(layoutWidget);
         label_2->setObjectName(QStringLiteral("label_2"));
 
         horizontalLayout->addWidget(label_2);
 
-        IDlineEdit = new QLineEdit(widget);
+        IDlineEdit = new QLineEdit(layoutWidget);
         IDlineEdit->setObjectName(QStringLiteral("IDlineEdit"));
 
         horizontalLayout->addWidget(IDlineEdit);
@@ -86,12 +86,12 @@ public:
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setSpacing(6);
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
-        label_3 = new QLabel(widget);
+        label_3 = new QLabel(layoutWidget);
         label_3->setObjectName(QStringLiteral("label_3"));
 
         horizontalLayout_2->addWidget(label_3);
 
-        PASSlineEdit = new QLineEdit(widget);
+        PASSlineEdit = new QLineEdit(layoutWidget);
         PASSlineEdit->setObjectName(QStringLiteral("PASSlineEdit"));
 
         horizontalLayout_2->addWidget(PASSlineEdit);
@@ -102,12 +102,12 @@ public:
         horizontalLayout_3 = new QHBoxLayout();
         horizontalLayout_3->setSpacing(6);
         horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
-        loginButton = new QPushButton(widget);
+        loginButton = new QPushButton(layoutWidget);
         loginButton->setObjectName(QStringLiteral("loginButton"));
 
         horizontalLayout_3->addWidget(loginButton);
 
-        newButton = new QPushButton(widget);
+        newButton = new QPushButton(layoutWidget);
         newButton->setObjectName(QStringLiteral("newButton"));
 
         horizontalLayout_3->addWidget(newButton);
@@ -118,7 +118,7 @@ public:
         phoe->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(phoe);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 485, 21));
+        menuBar->setGeometry(QRect(0, 0, 800, 25));
         phoe->setMenuBar(menuBar);
         mainToolBar = new QToolBar(phoe);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));

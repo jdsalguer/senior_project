@@ -26,7 +26,7 @@ class Ui_loginsuccess
 {
 public:
     QLabel *label;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QPushButton *loginsucButton;
 
@@ -34,17 +34,17 @@ public:
     {
         if (loginsuccess->objectName().isEmpty())
             loginsuccess->setObjectName(QStringLiteral("loginsuccess"));
-        loginsuccess->resize(400, 300);
+        loginsuccess->resize(800, 480);
         label = new QLabel(loginsuccess);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(60, 110, 281, 41));
-        widget = new QWidget(loginsuccess);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(110, 200, 158, 25));
-        horizontalLayout = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(loginsuccess);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(110, 200, 158, 29));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        loginsucButton = new QPushButton(widget);
+        loginsucButton = new QPushButton(layoutWidget);
         loginsucButton->setObjectName(QStringLiteral("loginsucButton"));
 
         horizontalLayout->addWidget(loginsucButton);

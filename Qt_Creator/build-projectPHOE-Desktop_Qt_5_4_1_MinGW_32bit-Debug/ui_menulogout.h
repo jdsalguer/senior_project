@@ -26,7 +26,7 @@ class Ui_menulogout
 {
 public:
     QLabel *label;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QPushButton *logoutbackButton;
     QPushButton *logout_outButton;
@@ -35,22 +35,22 @@ public:
     {
         if (menulogout->objectName().isEmpty())
             menulogout->setObjectName(QStringLiteral("menulogout"));
-        menulogout->resize(400, 300);
+        menulogout->resize(800, 480);
         label = new QLabel(menulogout);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(120, 120, 161, 31));
-        widget = new QWidget(menulogout);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(120, 220, 158, 25));
-        horizontalLayout = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(menulogout);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(120, 220, 178, 29));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        logoutbackButton = new QPushButton(widget);
+        logoutbackButton = new QPushButton(layoutWidget);
         logoutbackButton->setObjectName(QStringLiteral("logoutbackButton"));
 
         horizontalLayout->addWidget(logoutbackButton);
 
-        logout_outButton = new QPushButton(widget);
+        logout_outButton = new QPushButton(layoutWidget);
         logout_outButton->setObjectName(QStringLiteral("logout_outButton"));
 
         horizontalLayout->addWidget(logout_outButton);

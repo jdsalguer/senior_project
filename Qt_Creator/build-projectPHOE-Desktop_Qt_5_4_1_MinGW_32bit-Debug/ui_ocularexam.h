@@ -28,7 +28,7 @@ public:
     {
         if (ocularexam->objectName().isEmpty())
             ocularexam->setObjectName(QStringLiteral("ocularexam"));
-        ocularexam->resize(400, 300);
+        ocularexam->resize(800, 465);
         label = new QLabel(ocularexam);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(140, 140, 51, 16));

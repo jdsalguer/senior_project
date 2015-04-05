@@ -26,7 +26,7 @@ class Ui_colorinstruc
 {
 public:
     QLabel *label;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QPushButton *cinstrucbakButton;
     QPushButton *cinstrucbegButton;
@@ -35,22 +35,22 @@ public:
     {
         if (colorinstruc->objectName().isEmpty())
             colorinstruc->setObjectName(QStringLiteral("colorinstruc"));
-        colorinstruc->resize(400, 300);
+        colorinstruc->resize(800, 465);
         label = new QLabel(colorinstruc);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(110, 130, 251, 16));
-        widget = new QWidget(colorinstruc);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(110, 170, 158, 25));
-        horizontalLayout = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(colorinstruc);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(110, 170, 158, 25));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        cinstrucbakButton = new QPushButton(widget);
+        cinstrucbakButton = new QPushButton(layoutWidget);
         cinstrucbakButton->setObjectName(QStringLiteral("cinstrucbakButton"));
 
         horizontalLayout->addWidget(cinstrucbakButton);
 
-        cinstrucbegButton = new QPushButton(widget);
+        cinstrucbegButton = new QPushButton(layoutWidget);
         cinstrucbegButton->setObjectName(QStringLiteral("cinstrucbegButton"));
 
         horizontalLayout->addWidget(cinstrucbegButton);

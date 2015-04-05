@@ -78,7 +78,7 @@ public:
     {
         if (newlogin->objectName().isEmpty())
             newlogin->setObjectName(QStringLiteral("newlogin"));
-        newlogin->resize(800, 480);
+        newlogin->resize(800, 465);
         label = new QLabel(newlogin);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(10, 10, 511, 21));
@@ -87,7 +87,7 @@ public:
         groupBox->setGeometry(QRect(10, 40, 551, 381));
         layoutWidget = new QWidget(groupBox);
         layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(200, 350, 269, 29));
+        layoutWidget->setGeometry(QRect(200, 350, 239, 25));
         horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
@@ -108,7 +108,7 @@ public:
 
         layoutWidget1 = new QWidget(groupBox);
         layoutWidget1->setObjectName(QStringLiteral("layoutWidget1"));
-        layoutWidget1->setGeometry(QRect(130, 20, 471, 416));
+        layoutWidget1->setGeometry(QRect(30, 20, 471, 332));
         verticalLayout = new QVBoxLayout(layoutWidget1);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);

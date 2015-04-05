@@ -28,7 +28,7 @@ public:
     {
         if (fieldexam->objectName().isEmpty())
             fieldexam->setObjectName(QStringLiteral("fieldexam"));
-        fieldexam->resize(400, 300);
+        fieldexam->resize(800, 465);
         label = new QLabel(fieldexam);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(150, 130, 47, 13));

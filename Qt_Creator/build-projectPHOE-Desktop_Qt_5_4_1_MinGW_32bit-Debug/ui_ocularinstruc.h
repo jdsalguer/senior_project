@@ -26,7 +26,7 @@ class Ui_ocularinstruc
 {
 public:
     QLabel *label;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QPushButton *ocuinstbackButton;
     QPushButton *ocuinstbegButton;
@@ -35,22 +35,22 @@ public:
     {
         if (ocularinstruc->objectName().isEmpty())
             ocularinstruc->setObjectName(QStringLiteral("ocularinstruc"));
-        ocularinstruc->resize(400, 300);
+        ocularinstruc->resize(800, 465);
         label = new QLabel(ocularinstruc);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(120, 120, 171, 16));
-        widget = new QWidget(ocularinstruc);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(90, 170, 158, 25));
-        horizontalLayout = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(ocularinstruc);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(90, 170, 158, 25));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        ocuinstbackButton = new QPushButton(widget);
+        ocuinstbackButton = new QPushButton(layoutWidget);
         ocuinstbackButton->setObjectName(QStringLiteral("ocuinstbackButton"));
 
         horizontalLayout->addWidget(ocuinstbackButton);
 
-        ocuinstbegButton = new QPushButton(widget);
+        ocuinstbegButton = new QPushButton(layoutWidget);
         ocuinstbegButton->setObjectName(QStringLiteral("ocuinstbegButton"));
 
         horizontalLayout->addWidget(ocuinstbegButton);

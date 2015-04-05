@@ -28,7 +28,7 @@ public:
     {
         if (colorexam->objectName().isEmpty())
             colorexam->setObjectName(QStringLiteral("colorexam"));
-        colorexam->resize(400, 300);
+        colorexam->resize(800, 465);
         label = new QLabel(colorexam);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(120, 130, 171, 16));

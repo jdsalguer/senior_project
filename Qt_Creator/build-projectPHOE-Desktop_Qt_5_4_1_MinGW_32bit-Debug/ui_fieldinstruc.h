@@ -26,7 +26,7 @@ class Ui_fieldinstruc
 {
 public:
     QLabel *label;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QPushButton *fieldinstrucbakButton;
     QPushButton *fieldinstrucbegButton;
@@ -35,22 +35,22 @@ public:
     {
         if (fieldinstruc->objectName().isEmpty())
             fieldinstruc->setObjectName(QStringLiteral("fieldinstruc"));
-        fieldinstruc->resize(400, 300);
+        fieldinstruc->resize(800, 465);
         label = new QLabel(fieldinstruc);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(60, 110, 311, 16));
-        widget = new QWidget(fieldinstruc);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(100, 190, 158, 25));
-        horizontalLayout = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(fieldinstruc);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(100, 190, 158, 25));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        fieldinstrucbakButton = new QPushButton(widget);
+        fieldinstrucbakButton = new QPushButton(layoutWidget);
         fieldinstrucbakButton->setObjectName(QStringLiteral("fieldinstrucbakButton"));
 
         horizontalLayout->addWidget(fieldinstrucbakButton);
 
-        fieldinstrucbegButton = new QPushButton(widget);
+        fieldinstrucbegButton = new QPushButton(layoutWidget);
         fieldinstrucbegButton->setObjectName(QStringLiteral("fieldinstrucbegButton"));
 
         horizontalLayout->addWidget(fieldinstrucbegButton);

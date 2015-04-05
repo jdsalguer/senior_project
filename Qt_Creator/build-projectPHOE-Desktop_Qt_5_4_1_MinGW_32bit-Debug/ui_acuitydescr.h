@@ -16,8 +16,9 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
-#include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTextBrowser>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -25,8 +26,9 @@ QT_BEGIN_NAMESPACE
 class Ui_acuitydescr
 {
 public:
-    QLabel *label;
     QWidget *widget;
+    QVBoxLayout *verticalLayout;
+    QTextBrowser *textBrowser;
     QHBoxLayout *horizontalLayout;
     QPushButton *adescrbakButton;
     QPushButton *adescrcontButton;
@@ -35,16 +37,20 @@ public:
     {
         if (acuitydescr->objectName().isEmpty())
             acuitydescr->setObjectName(QStringLiteral("acuitydescr"));
-        acuitydescr->resize(400, 300);
-        label = new QLabel(acuitydescr);
-        label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(50, 80, 331, 81));
+        acuitydescr->resize(800, 465);
         widget = new QWidget(acuitydescr);
         widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(100, 170, 158, 25));
-        horizontalLayout = new QHBoxLayout(widget);
+        widget->setGeometry(QRect(10, 10, 781, 451));
+        verticalLayout = new QVBoxLayout(widget);
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        textBrowser = new QTextBrowser(widget);
+        textBrowser->setObjectName(QStringLiteral("textBrowser"));
+
+        verticalLayout->addWidget(textBrowser);
+
+        horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        horizontalLayout->setContentsMargins(0, 0, 0, 0);
         adescrbakButton = new QPushButton(widget);
         adescrbakButton->setObjectName(QStringLiteral("adescrbakButton"));
 
@@ -56,6 +62,9 @@ public:
         horizontalLayout->addWidget(adescrcontButton);
 
 
+        verticalLayout->addLayout(horizontalLayout);
+
+
         retranslateUi(acuitydescr);
 
         QMetaObject::connectSlotsByName(acuitydescr);
@@ -64,8 +73,22 @@ public:
     void retranslateUi(QDialog *acuitydescr)
     {
         acuitydescr->setWindowTitle(QApplication::translate("acuitydescr", "Dialog", 0));
-        label->setText(QApplication::translate("acuitydescr", "The acuity fields exam will consist \n"
-" of...gggggggggggggg", 0));
+        textBrowser->setHtml(QApplication::translate("acuitydescr", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;\"><br /></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;\"><br /></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-"
+                        "indent:0px; font-size:12pt; font-weight:600;\"><br /></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;\"><br /></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;\"><br /></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt; font-weight:600;\">Visual Acuity</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;\"><br /></p>\n"
+"<p s"
+                        "tyle=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">The visual acuity examination will incorporate the use of a Snellen chart. This is the chart with the letters on it ranging from large letters on the top, to smallest letters on the bottom decreasing in size as they go down the chart. You will be instructed to get six feet away from the device. The distance sensor will notify you when you are six feet away. You will then be asked to cover one eye at a time. With one eye covered, you will read the Snellen chart. The voice output function will allow you to hear the commands that you may not be able to see in the command window. You will go through the Snellen chart, typing in your response to each line. These responses will then be compared to the correct responses.</span></p></body></html>", 0));
         adescrbakButton->setText(QApplication::translate("acuitydescr", "<- BACK", 0));
         adescrcontButton->setText(QApplication::translate("acuitydescr", "CONTINUE", 0));
     } // retranslateUi

@@ -34,13 +34,13 @@ public:
     {
         if (loginsuccess->objectName().isEmpty())
             loginsuccess->setObjectName(QStringLiteral("loginsuccess"));
-        loginsuccess->resize(800, 480);
+        loginsuccess->resize(800, 465);
         label = new QLabel(loginsuccess);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(60, 110, 281, 41));
         layoutWidget = new QWidget(loginsuccess);
         layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(110, 200, 158, 29));
+        layoutWidget->setGeometry(QRect(110, 200, 158, 25));
         horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);

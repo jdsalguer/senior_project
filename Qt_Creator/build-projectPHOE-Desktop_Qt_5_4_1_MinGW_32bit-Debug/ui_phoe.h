@@ -51,12 +51,12 @@ public:
     {
         if (phoe->objectName().isEmpty())
             phoe->setObjectName(QStringLiteral("phoe"));
-        phoe->resize(800, 480);
+        phoe->resize(800, 465);
         centralWidget = new QWidget(phoe);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         layoutWidget = new QWidget(centralWidget);
         layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(250, 150, 298, 131));
+        layoutWidget->setGeometry(QRect(140, 90, 501, 241));
         verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setSpacing(6);
         verticalLayout->setContentsMargins(11, 11, 11, 11);
@@ -118,7 +118,7 @@ public:
         phoe->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(phoe);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 800, 25));
+        menuBar->setGeometry(QRect(0, 0, 800, 21));
         phoe->setMenuBar(menuBar);
         mainToolBar = new QToolBar(phoe);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));

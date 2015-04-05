@@ -20,6 +20,7 @@ void phoe::on_loginButton_clicked()
     loginsuccess Loginsuccess;
     Loginsuccess.setModal(true);
     Loginsuccess.exec();
+
 }
 
 void phoe::on_newButton_clicked()

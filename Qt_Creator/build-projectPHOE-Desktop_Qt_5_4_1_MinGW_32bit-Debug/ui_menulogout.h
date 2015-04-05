@@ -35,13 +35,13 @@ public:
     {
         if (menulogout->objectName().isEmpty())
             menulogout->setObjectName(QStringLiteral("menulogout"));
-        menulogout->resize(800, 480);
+        menulogout->resize(800, 465);
         label = new QLabel(menulogout);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(120, 120, 161, 31));
         layoutWidget = new QWidget(menulogout);
         layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(120, 220, 178, 29));
+        layoutWidget->setGeometry(QRect(120, 220, 158, 25));
         horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);

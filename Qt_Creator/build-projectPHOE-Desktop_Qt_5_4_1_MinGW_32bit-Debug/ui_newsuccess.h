@@ -30,7 +30,7 @@ public:
     {
         if (newsuccess->objectName().isEmpty())
             newsuccess->setObjectName(QStringLiteral("newsuccess"));
-        newsuccess->resize(400, 300);
+        newsuccess->resize(800, 465);
         cresuccontButton = new QPushButton(newsuccess);
         cresuccontButton->setObjectName(QStringLiteral("cresuccontButton"));
         cresuccontButton->setGeometry(QRect(160, 190, 75, 23));

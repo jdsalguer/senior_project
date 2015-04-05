@@ -28,7 +28,7 @@ public:
     {
         if (acuityexam->objectName().isEmpty())
             acuityexam->setObjectName(QStringLiteral("acuityexam"));
-        acuityexam->resize(400, 300);
+        acuityexam->resize(800, 465);
         label = new QLabel(acuityexam);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(130, 140, 47, 13));

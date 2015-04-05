@@ -43,7 +43,7 @@ public:
     {
         if (exammenu->objectName().isEmpty())
             exammenu->setObjectName(QStringLiteral("exammenu"));
-        exammenu->resize(800, 480);
+        exammenu->resize(800, 465);
         label = new QLabel(exammenu);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(150, 20, 91, 16));
@@ -110,7 +110,7 @@ public:
         label->setText(QApplication::translate("exammenu", "Choose An Exam", 0));
         fundusexamButton->setText(QApplication::translate("exammenu", "FUNDUS EXAMINATION", 0));
         ocularexamButton->setText(QApplication::translate("exammenu", "OCULAR MOVEMENTS", 0));
-        fieldsexamButton->setText(QApplication::translate("exammenu", "VISUAL FIELDS", 0));
+        fieldsexamButton->setText(QApplication::translate("exammenu", "VISUAL FIELD", 0));
         colorexamButton->setText(QApplication::translate("exammenu", "COLOR BLINDNESS", 0));
         acuityexamButton->setText(QApplication::translate("exammenu", "VISUAL ACUITY", 0));
         genreportButton->setText(QApplication::translate("exammenu", "GENERATE REPORT", 0));

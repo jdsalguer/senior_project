@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>800</width>
+    <height>465</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -26,7 +26,7 @@
     <string>Choose An Exam</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>70</x>
@@ -55,7 +55,7 @@
       <item>
        <widget class="QPushButton" name="fieldsexamButton">
         <property name="text">
-         <string>VISUAL FIELDS</string>
+         <string>VISUAL FIELD</string>
         </property>
        </widget>
       </item>

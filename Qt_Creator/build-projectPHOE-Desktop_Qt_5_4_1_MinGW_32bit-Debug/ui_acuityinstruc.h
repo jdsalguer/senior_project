@@ -26,7 +26,7 @@ class Ui_acuityinstruc
 {
 public:
     QLabel *label;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QPushButton *ainstrucbakButton;
     QPushButton *ainstrucbegButton;
@@ -35,22 +35,22 @@ public:
     {
         if (acuityinstruc->objectName().isEmpty())
             acuityinstruc->setObjectName(QStringLiteral("acuityinstruc"));
-        acuityinstruc->resize(400, 300);
+        acuityinstruc->resize(800, 465);
         label = new QLabel(acuityinstruc);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(120, 110, 91, 16));
-        widget = new QWidget(acuityinstruc);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(110, 170, 158, 25));
-        horizontalLayout = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(acuityinstruc);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(110, 170, 158, 25));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        ainstrucbakButton = new QPushButton(widget);
+        ainstrucbakButton = new QPushButton(layoutWidget);
         ainstrucbakButton->setObjectName(QStringLiteral("ainstrucbakButton"));
 
         horizontalLayout->addWidget(ainstrucbakButton);
 
-        ainstrucbegButton = new QPushButton(widget);
+        ainstrucbegButton = new QPushButton(layoutWidget);
         ainstrucbegButton->setObjectName(QStringLiteral("ainstrucbegButton"));
 
         horizontalLayout->addWidget(ainstrucbegButton);

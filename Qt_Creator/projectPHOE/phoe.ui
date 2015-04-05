@@ -6,21 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>485</width>
-    <height>318</height>
+    <width>800</width>
+    <height>465</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>phoe</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>60</y>
-      <width>298</width>
-      <height>131</height>
+      <x>140</x>
+      <y>90</y>
+      <width>501</width>
+      <height>241</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -85,7 +85,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>485</width>
+     <width>800</width>
      <height>21</height>
     </rect>
    </property>

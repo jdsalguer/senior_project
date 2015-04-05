@@ -26,7 +26,7 @@ class Ui_fundusinstruc
 {
 public:
     QLabel *label;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QPushButton *funinsbackButton;
     QPushButton *funinsbegButton;
@@ -35,22 +35,22 @@ public:
     {
         if (fundusinstruc->objectName().isEmpty())
             fundusinstruc->setObjectName(QStringLiteral("fundusinstruc"));
-        fundusinstruc->resize(400, 300);
+        fundusinstruc->resize(800, 465);
         label = new QLabel(fundusinstruc);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(80, 120, 181, 16));
-        widget = new QWidget(fundusinstruc);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(130, 190, 158, 25));
-        horizontalLayout = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(fundusinstruc);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(130, 190, 158, 25));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        funinsbackButton = new QPushButton(widget);
+        funinsbackButton = new QPushButton(layoutWidget);
         funinsbackButton->setObjectName(QStringLiteral("funinsbackButton"));
 
         horizontalLayout->addWidget(funinsbackButton);
 
-        funinsbegButton = new QPushButton(widget);
+        funinsbegButton = new QPushButton(layoutWidget);
         funinsbegButton->setObjectName(QStringLiteral("funinsbegButton"));
 
         horizontalLayout->addWidget(funinsbegButton);

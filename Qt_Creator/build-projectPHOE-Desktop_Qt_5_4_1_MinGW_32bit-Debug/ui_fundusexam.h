@@ -28,7 +28,7 @@ public:
     {
         if (fundusexam->objectName().isEmpty())
             fundusexam->setObjectName(QStringLiteral("fundusexam"));
-        fundusexam->resize(400, 300);
+        fundusexam->resize(800, 465);
         label = new QLabel(fundusexam);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(160, 150, 47, 13));

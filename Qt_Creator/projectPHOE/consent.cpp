@@ -19,10 +19,11 @@ void consent::on_consentcontButton_clicked()
 {
     newlogin Newlogin;
     Newlogin.setModal(true);
+    this->hide();
     Newlogin.exec();
 }
 
 void consent::on_consentbackButton_clicked()
 {
-    //back to phoe.cpp
+    this->hide();
 }

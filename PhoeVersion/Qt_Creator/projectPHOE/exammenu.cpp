@@ -11,6 +11,7 @@ exammenu::exammenu(QWidget *parent) :
     ui(new Ui::exammenu)
 {
     ui->setupUi(this);
+    this->showFullScreen();
 }
 
 exammenu::~exammenu()
@@ -51,4 +52,9 @@ void exammenu::on_acuityexamButton_clicked()
     acuitydescr Acuitydescr;
     Acuitydescr.setModal(true);
     Acuitydescr.exec();
+}
+
+void exammenu::on_menulogoutButton_clicked()
+{
+    this->hide();
 }

@@ -6,6 +6,7 @@ ocularexam::ocularexam(QWidget *parent) :
     ui(new Ui::ocularexam)
 {
     ui->setupUi(this);
+    this->showFullScreen();
 }
 
 ocularexam::~ocularexam()

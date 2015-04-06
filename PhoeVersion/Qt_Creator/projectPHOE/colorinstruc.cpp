@@ -7,6 +7,7 @@ colorinstruc::colorinstruc(QWidget *parent) :
     ui(new Ui::colorinstruc)
 {
     ui->setupUi(this);
+    this->showFullScreen();
 }
 
 colorinstruc::~colorinstruc()
@@ -17,6 +18,7 @@ colorinstruc::~colorinstruc()
 void colorinstruc::on_cinstrucbakButton_clicked()
 {
     //back to colordescr.cpp
+    this->hide();
 }
 
 void colorinstruc::on_cinstrucbegButton_clicked()

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'loginerror.ui'
 **
-** Created: Sat Mar 28 18:33:41 2015
+** Created: Sat Apr 4 21:41:34 2015
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -18,34 +18,59 @@
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
 #include <QtGui/QPushButton>
+#include <QtGui/QVBoxLayout>
+#include <QtGui/QWidget>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_loginerror
 {
 public:
+    QPushButton *errorokButton;
+    QWidget *widget;
+    QVBoxLayout *verticalLayout;
     QLabel *label;
     QLabel *label_2;
     QLabel *label_3;
-    QPushButton *errorokButton;
 
     void setupUi(QDialog *loginerror)
     {
         if (loginerror->objectName().isEmpty())
             loginerror->setObjectName(QString::fromUtf8("loginerror"));
-        loginerror->resize(400, 300);
-        label = new QLabel(loginerror);
-        label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(60, 100, 271, 41));
-        label_2 = new QLabel(loginerror);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(50, 140, 311, 31));
-        label_3 = new QLabel(loginerror);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setGeometry(QRect(130, 180, 131, 16));
+        loginerror->resize(800, 465);
         errorokButton = new QPushButton(loginerror);
         errorokButton->setObjectName(QString::fromUtf8("errorokButton"));
-        errorokButton->setGeometry(QRect(150, 220, 75, 23));
+        errorokButton->setGeometry(QRect(310, 260, 161, 71));
+        QFont font;
+        font.setPointSize(16);
+        errorokButton->setFont(font);
+        widget = new QWidget(loginerror);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(80, 30, 641, 201));
+        verticalLayout = new QVBoxLayout(widget);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        label = new QLabel(widget);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setFont(font);
+        label->setAlignment(Qt::AlignCenter);
+
+        verticalLayout->addWidget(label);
+
+        label_2 = new QLabel(widget);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setFont(font);
+        label_2->setAlignment(Qt::AlignCenter);
+
+        verticalLayout->addWidget(label_2);
+
+        label_3 = new QLabel(widget);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setFont(font);
+        label_3->setAlignment(Qt::AlignCenter);
+
+        verticalLayout->addWidget(label_3);
+
 
         retranslateUi(loginerror);
 
@@ -55,10 +80,10 @@ public:
     void retranslateUi(QDialog *loginerror)
     {
         loginerror->setWindowTitle(QApplication::translate("loginerror", "Dialog", 0, QApplication::UnicodeUTF8));
+        errorokButton->setText(QApplication::translate("loginerror", "OK", 0, QApplication::UnicodeUTF8));
         label->setText(QApplication::translate("loginerror", "Your ID and/or Password is incorrect. Please try again.", 0, QApplication::UnicodeUTF8));
         label_2->setText(QApplication::translate("loginerror", "If you don't have an account, please press 'NEW' in the menu.", 0, QApplication::UnicodeUTF8));
         label_3->setText(QApplication::translate("loginerror", "Press 'OK' to continue...", 0, QApplication::UnicodeUTF8));
-        errorokButton->setText(QApplication::translate("loginerror", "OK", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

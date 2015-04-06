@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'loginsuccess.ui'
 **
-** Created: Sat Mar 28 18:33:41 2015
+** Created: Sat Apr 4 21:41:34 2015
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -15,11 +15,9 @@
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
 #include <QtGui/QDialog>
-#include <QtGui/QHBoxLayout>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
 #include <QtGui/QPushButton>
-#include <QtGui/QWidget>
 
 QT_BEGIN_NAMESPACE
 
@@ -27,29 +25,23 @@ class Ui_loginsuccess
 {
 public:
     QLabel *label;
-    QWidget *widget;
-    QHBoxLayout *horizontalLayout;
     QPushButton *loginsucButton;
 
     void setupUi(QDialog *loginsuccess)
     {
         if (loginsuccess->objectName().isEmpty())
             loginsuccess->setObjectName(QString::fromUtf8("loginsuccess"));
-        loginsuccess->resize(400, 300);
+        loginsuccess->resize(800, 465);
         label = new QLabel(loginsuccess);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(60, 110, 281, 41));
-        widget = new QWidget(loginsuccess);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(110, 200, 158, 25));
-        horizontalLayout = new QHBoxLayout(widget);
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        loginsucButton = new QPushButton(widget);
+        label->setGeometry(QRect(140, 90, 561, 111));
+        QFont font;
+        font.setPointSize(16);
+        label->setFont(font);
+        loginsucButton = new QPushButton(loginsuccess);
         loginsucButton->setObjectName(QString::fromUtf8("loginsucButton"));
-
-        horizontalLayout->addWidget(loginsucButton);
-
+        loginsucButton->setGeometry(QRect(290, 210, 211, 101));
+        loginsucButton->setFont(font);
 
         retranslateUi(loginsuccess);
 

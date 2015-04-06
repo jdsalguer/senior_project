@@ -7,52 +7,75 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>480</height>
+    <height>465</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QTextBrowser" name="textBrowser">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>20</x>
      <y>10</y>
-     <width>741</width>
-     <height>441</height>
+     <width>771</width>
+     <height>341</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
-     <widget class="QTextBrowser" name="textBrowser">
-      <property name="html">
-       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:150%;&quot;&gt;&lt;span style=&quot; text-decoration: underline;&quot;&gt;Visual Field&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:150%;&quot;&gt;This examination is broken down into two parts. The first part tests peripheral vision, while the second part tests response to light. For the first part of the examination you will place their head in the chin rest. Your head will be placed in the chin rest to allow for accurate distances to be constant for the intentions of proper examination. You will be instructed to look at a fixation point. While looking at that fixation point, a dot will slowly encroach on the screen. You will touch the screen when you first notice the dot encroaching in your peripheral vision. This will be done for a dot encroaching from the right, the left, the top of the screen and the bottom of the screen. These results will then be used to generate a peripheral vision map. At times throughout this examination the facilitator will be instructed to move the chin rest to different angles, and move the device up or down. To test the second part of the visual fields examination, environmental lighting will be used. You will be asked to look at a fixation point. The facilitator will then turn the lights off for a few seconds before turning the lights back on again. This will allow for natural eye dilation. The camera will take pictures during this process to record your ocular response to light. &lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:150%;&quot;&gt;&lt;span style=&quot; font-size:16pt; text-decoration: underline;&quot;&gt;Visual Field&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:150%;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;This examination is broken down into two parts. The first part tests peripheral vision, while the second part tests response to light. For the first part of the examination you will place their head in the chin rest. Your head will be placed in the chin rest to allow for accurate distances to be constant for the intentions of proper examination. You will be instructed to look at a fixation point. While looking at that fixation point, a dot will slowly encroach on the screen. You will touch the screen when you first notice the dot encroaching in your peripheral vision. This will be done for a dot encroaching from the right, the left, the top of the screen and the bottom of the screen. These results will then be used to generate a peripheral vision map. At times throughout this examination the facilitator will be instructed to move the chin rest to different angles, and move the device up or down. To test the second part of the visual fields examination, environmental lighting will be used. You will be asked to look at a fixation point. The facilitator will then turn the lights off for a few seconds before turning the lights back on again. This will allow for natural eye dilation. The camera will take pictures during this process to record your ocular response to light.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>380</y>
+     <width>621</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="fielddescrbakButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;- BACK</string>
       </property>
      </widget>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <item>
-       <widget class="QPushButton" name="fielddescrbakButton">
-        <property name="text">
-         <string>&lt;- BACK</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="fielddescrcontButton">
-        <property name="text">
-         <string>CONTINUE</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     <widget class="QPushButton" name="fielddescrcontButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>CONTINUE</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>

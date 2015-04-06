@@ -8,6 +8,7 @@ menulogout::menulogout(QWidget *parent) :
     ui(new Ui::menulogout)
 {
     ui->setupUi(this);
+    this->showFullScreen();
 }
 
 menulogout::~menulogout()
@@ -25,4 +26,5 @@ void menulogout::on_logoutbackButton_clicked()
 void menulogout::on_logout_outButton_clicked()
 {
     //back to phoe login screen
+    this->hide();
 }

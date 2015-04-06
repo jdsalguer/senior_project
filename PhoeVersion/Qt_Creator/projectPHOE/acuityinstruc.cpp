@@ -7,6 +7,7 @@ acuityinstruc::acuityinstruc(QWidget *parent) :
     ui(new Ui::acuityinstruc)
 {
     ui->setupUi(this);
+    this->showFullScreen();
 }
 
 acuityinstruc::~acuityinstruc()
@@ -17,6 +18,7 @@ acuityinstruc::~acuityinstruc()
 void acuityinstruc::on_ainstrucbakButton_clicked()
 {
     //back to acuitydescr.cpp
+    this->hide();
 }
 
 void acuityinstruc::on_ainstrucbegButton_clicked()

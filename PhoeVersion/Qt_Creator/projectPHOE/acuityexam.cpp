@@ -6,6 +6,7 @@ acuityexam::acuityexam(QWidget *parent) :
     ui(new Ui::acuityexam)
 {
     ui->setupUi(this);
+    this->showFullScreen();
 }
 
 acuityexam::~acuityexam()

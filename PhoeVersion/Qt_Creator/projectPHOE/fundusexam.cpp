@@ -6,6 +6,8 @@ fundusexam::fundusexam(QWidget *parent) :
     ui(new Ui::fundusexam)
 {
     ui->setupUi(this);
+    this->showFullScreen();
+
 }
 
 fundusexam::~fundusexam()

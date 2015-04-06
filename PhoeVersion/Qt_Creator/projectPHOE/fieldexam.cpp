@@ -6,6 +6,7 @@ fieldexam::fieldexam(QWidget *parent) :
     ui(new Ui::fieldexam)
 {
     ui->setupUi(this);
+    this->showFullScreen();
 }
 
 fieldexam::~fieldexam()

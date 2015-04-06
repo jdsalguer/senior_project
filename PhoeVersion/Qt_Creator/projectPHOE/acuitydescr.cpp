@@ -7,6 +7,7 @@ acuitydescr::acuitydescr(QWidget *parent) :
     ui(new Ui::acuitydescr)
 {
     ui->setupUi(this);
+    this->showFullScreen();
 }
 
 acuitydescr::~acuitydescr()
@@ -17,6 +18,7 @@ acuitydescr::~acuitydescr()
 void acuitydescr::on_adescrbakButton_clicked()
 {
     //back to exammenu.cpp
+    this->hide();
 }
 
 void acuitydescr::on_adescrcontButton_clicked()

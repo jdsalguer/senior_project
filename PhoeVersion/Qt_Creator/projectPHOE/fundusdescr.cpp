@@ -7,6 +7,7 @@ fundusdescr::fundusdescr(QWidget *parent) :
     ui(new Ui::fundusdescr)
 {
     ui->setupUi(this);
+    this->showFullScreen();
 }
 
 fundusdescr::~fundusdescr()
@@ -17,6 +18,7 @@ fundusdescr::~fundusdescr()
 void fundusdescr::on_fundesbackButton_clicked()
 {
     //back to exammenu.cpp
+    this->hide();
 }
 
 void fundusdescr::on_fundesconButton_clicked()

@@ -7,6 +7,7 @@ loginerror::loginerror(QWidget *parent) :
     ui(new Ui::loginerror)
 {
     ui->setupUi(this);
+    this->showFullScreen();
 }
 
 loginerror::~loginerror()
@@ -24,4 +25,5 @@ void loginerror::on_pushButton_clicked()
 void loginerror::on_errorokButton_clicked()
 {
     //back to phoe.cpp
+    this->hide();
 }

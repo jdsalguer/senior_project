@@ -26,6 +26,8 @@ private slots:
 
     void on_acuityexamButton_clicked();
 
+    void on_menulogoutButton_clicked();
+
 private:
     Ui::exammenu *ui;
 };

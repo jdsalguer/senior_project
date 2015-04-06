@@ -7,6 +7,7 @@ fielddescr::fielddescr(QWidget *parent) :
     ui(new Ui::fielddescr)
 {
     ui->setupUi(this);
+    this->showFullScreen();
 }
 
 fielddescr::~fielddescr()
@@ -17,6 +18,7 @@ fielddescr::~fielddescr()
 void fielddescr::on_fielddescrbakButton_clicked()
 {
     //back to exammenu.cpp
+    this->hide();
 }
 
 void fielddescr::on_fielddescrcontButton_clicked()

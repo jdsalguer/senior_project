@@ -7,6 +7,7 @@ loginsuccess::loginsuccess(QWidget *parent) :
     ui(new Ui::loginsuccess)
 {
     ui->setupUi(this);
+    this->showFullScreen();
 }
 
 loginsuccess::~loginsuccess()

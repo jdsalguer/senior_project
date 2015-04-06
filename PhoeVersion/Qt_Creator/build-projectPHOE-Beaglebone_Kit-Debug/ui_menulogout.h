@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'menulogout.ui'
 **
-** Created: Sat Mar 28 18:33:41 2015
+** Created: Fri Apr 3 13:48:17 2015
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -27,7 +27,7 @@ class Ui_menulogout
 {
 public:
     QLabel *label;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QPushButton *logoutbackButton;
     QPushButton *logout_outButton;
@@ -36,22 +36,22 @@ public:
     {
         if (menulogout->objectName().isEmpty())
             menulogout->setObjectName(QString::fromUtf8("menulogout"));
-        menulogout->resize(400, 300);
+        menulogout->resize(800, 465);
         label = new QLabel(menulogout);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(120, 120, 161, 31));
-        widget = new QWidget(menulogout);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(120, 220, 158, 25));
-        horizontalLayout = new QHBoxLayout(widget);
+        label->setGeometry(QRect(270, 160, 241, 31));
+        layoutWidget = new QWidget(menulogout);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(290, 230, 178, 29));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        logoutbackButton = new QPushButton(widget);
+        logoutbackButton = new QPushButton(layoutWidget);
         logoutbackButton->setObjectName(QString::fromUtf8("logoutbackButton"));
 
         horizontalLayout->addWidget(logoutbackButton);
 
-        logout_outButton = new QPushButton(widget);
+        logout_outButton = new QPushButton(layoutWidget);
         logout_outButton->setObjectName(QString::fromUtf8("logout_outButton"));
 
         horizontalLayout->addWidget(logout_outButton);

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'phoe.ui'
 **
-** Created: Sat Mar 28 18:33:41 2015
+** Created: Sat Apr 4 21:41:34 2015
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -32,16 +32,18 @@ class Ui_phoe
 {
 public:
     QWidget *centralWidget;
-    QWidget *widget;
-    QVBoxLayout *verticalLayout;
+    QWidget *layoutWidget;
+    QVBoxLayout *verticalLayout_3;
     QLabel *label;
-    QHBoxLayout *horizontalLayout;
-    QLabel *label_2;
-    QLineEdit *IDlineEdit;
     QHBoxLayout *horizontalLayout_2;
+    QVBoxLayout *verticalLayout_2;
+    QLabel *label_2;
     QLabel *label_3;
+    QVBoxLayout *verticalLayout;
+    QLineEdit *IDlineEdit;
     QLineEdit *PASSlineEdit;
-    QHBoxLayout *horizontalLayout_3;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout;
     QPushButton *loginButton;
     QPushButton *newButton;
     QMenuBar *menuBar;
@@ -52,74 +54,99 @@ public:
     {
         if (phoe->objectName().isEmpty())
             phoe->setObjectName(QString::fromUtf8("phoe"));
-        phoe->resize(485, 318);
+        phoe->resize(800, 465);
         centralWidget = new QWidget(phoe);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
-        widget = new QWidget(centralWidget);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(90, 60, 298, 131));
-        verticalLayout = new QVBoxLayout(widget);
-        verticalLayout->setSpacing(6);
-        verticalLayout->setContentsMargins(11, 11, 11, 11);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        verticalLayout->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(widget);
+        layoutWidget = new QWidget(centralWidget);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(210, 20, 381, 231));
+        verticalLayout_3 = new QVBoxLayout(layoutWidget);
+        verticalLayout_3->setSpacing(6);
+        verticalLayout_3->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
+        verticalLayout_3->setContentsMargins(0, 0, 0, 0);
+        label = new QLabel(layoutWidget);
         label->setObjectName(QString::fromUtf8("label"));
+        QFont font;
+        font.setPointSize(16);
+        label->setFont(font);
+        label->setAlignment(Qt::AlignCenter);
 
-        verticalLayout->addWidget(label);
-
-        horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setSpacing(6);
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        label_2 = new QLabel(widget);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-
-        horizontalLayout->addWidget(label_2);
-
-        IDlineEdit = new QLineEdit(widget);
-        IDlineEdit->setObjectName(QString::fromUtf8("IDlineEdit"));
-
-        horizontalLayout->addWidget(IDlineEdit);
-
-
-        verticalLayout->addLayout(horizontalLayout);
+        verticalLayout_3->addWidget(label);
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setSpacing(6);
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
-        label_3 = new QLabel(widget);
+        verticalLayout_2 = new QVBoxLayout();
+        verticalLayout_2->setSpacing(6);
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        label_2 = new QLabel(layoutWidget);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setFont(font);
+
+        verticalLayout_2->addWidget(label_2);
+
+        label_3 = new QLabel(layoutWidget);
         label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setFont(font);
 
-        horizontalLayout_2->addWidget(label_3);
+        verticalLayout_2->addWidget(label_3);
 
-        PASSlineEdit = new QLineEdit(widget);
+
+        horizontalLayout_2->addLayout(verticalLayout_2);
+
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setSpacing(6);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        IDlineEdit = new QLineEdit(layoutWidget);
+        IDlineEdit->setObjectName(QString::fromUtf8("IDlineEdit"));
+        IDlineEdit->setFont(font);
+
+        verticalLayout->addWidget(IDlineEdit);
+
+        PASSlineEdit = new QLineEdit(layoutWidget);
         PASSlineEdit->setObjectName(QString::fromUtf8("PASSlineEdit"));
+        PASSlineEdit->setFont(font);
 
-        horizontalLayout_2->addWidget(PASSlineEdit);
+        verticalLayout->addWidget(PASSlineEdit);
 
 
-        verticalLayout->addLayout(horizontalLayout_2);
+        horizontalLayout_2->addLayout(verticalLayout);
 
-        horizontalLayout_3 = new QHBoxLayout();
-        horizontalLayout_3->setSpacing(6);
-        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+
+        verticalLayout_3->addLayout(horizontalLayout_2);
+
+        widget = new QWidget(centralWidget);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(170, 300, 451, 71));
+        horizontalLayout = new QHBoxLayout(widget);
+        horizontalLayout->setSpacing(6);
+        horizontalLayout->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
         loginButton = new QPushButton(widget);
         loginButton->setObjectName(QString::fromUtf8("loginButton"));
+        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Expanding);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(loginButton->sizePolicy().hasHeightForWidth());
+        loginButton->setSizePolicy(sizePolicy);
+        loginButton->setFont(font);
 
-        horizontalLayout_3->addWidget(loginButton);
+        horizontalLayout->addWidget(loginButton);
 
         newButton = new QPushButton(widget);
         newButton->setObjectName(QString::fromUtf8("newButton"));
+        sizePolicy.setHeightForWidth(newButton->sizePolicy().hasHeightForWidth());
+        newButton->setSizePolicy(sizePolicy);
+        newButton->setFont(font);
 
-        horizontalLayout_3->addWidget(newButton);
-
-
-        verticalLayout->addLayout(horizontalLayout_3);
+        horizontalLayout->addWidget(newButton);
 
         phoe->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(phoe);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 485, 21));
+        menuBar->setGeometry(QRect(0, 0, 800, 25));
         phoe->setMenuBar(menuBar);
         mainToolBar = new QToolBar(phoe);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
@@ -136,7 +163,7 @@ public:
     void retranslateUi(QMainWindow *phoe)
     {
         phoe->setWindowTitle(QApplication::translate("phoe", "phoe", 0, QApplication::UnicodeUTF8));
-        label->setText(QApplication::translate("phoe", "                     ENTER ACCOUNT INFORMATION", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("phoe", "ENTER ACCOUNT INFORMATION", 0, QApplication::UnicodeUTF8));
         label_2->setText(QApplication::translate("phoe", "ID :", 0, QApplication::UnicodeUTF8));
         label_3->setText(QApplication::translate("phoe", "PASSWORD :", 0, QApplication::UnicodeUTF8));
         loginButton->setText(QApplication::translate("phoe", "LOGIN", 0, QApplication::UnicodeUTF8));

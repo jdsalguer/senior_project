@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'newlogin.ui'
 **
-** Created: Sat Mar 28 18:33:41 2015
+** Created: Sat Apr 4 19:10:06 2015
 **      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -36,263 +36,210 @@ public:
     QPushButton *newbakButton;
     QPushButton *newcreButton;
     QPushButton *newcanButton;
-    QWidget *layoutWidget1;
-    QVBoxLayout *verticalLayout;
-    QHBoxLayout *horizontalLayout_13;
-    QLabel *label_2;
-    QLineEdit *lineEdit;
-    QHBoxLayout *horizontalLayout_12;
-    QLabel *label_3;
-    QLineEdit *lineEdit_2;
-    QHBoxLayout *horizontalLayout_10;
-    QLabel *label_4;
-    QLineEdit *lineEdit_3;
-    QHBoxLayout *horizontalLayout_11;
-    QLabel *label_13;
-    QLineEdit *lineEdit_4;
-    QHBoxLayout *horizontalLayout_9;
-    QLabel *label_5;
-    QLineEdit *lineEdit_12;
-    QHBoxLayout *horizontalLayout_8;
-    QLabel *label_6;
-    QLineEdit *lineEdit_5;
-    QHBoxLayout *horizontalLayout_7;
-    QLabel *label_7;
-    QLineEdit *lineEdit_6;
-    QHBoxLayout *horizontalLayout_6;
-    QLabel *label_8;
-    QLineEdit *lineEdit_7;
-    QHBoxLayout *horizontalLayout_5;
-    QLabel *label_9;
-    QLineEdit *lineEdit_8;
-    QHBoxLayout *horizontalLayout_4;
-    QLabel *label_10;
-    QLineEdit *lineEdit_9;
-    QHBoxLayout *horizontalLayout_3;
-    QLabel *label_11;
-    QLineEdit *lineEdit_10;
+    QWidget *widget;
     QHBoxLayout *horizontalLayout_2;
+    QVBoxLayout *verticalLayout_2;
+    QLabel *label_2;
+    QLabel *label_3;
+    QLabel *label_4;
+    QLabel *label_13;
+    QLabel *label_5;
+    QLabel *label_6;
+    QLabel *label_7;
+    QLabel *label_8;
+    QLabel *label_9;
+    QLabel *label_10;
+    QLabel *label_11;
     QLabel *label_12;
-    QLineEdit *lineEdit_11;
+    QVBoxLayout *verticalLayout;
+    QLineEdit *firstNameEdit;
+    QLineEdit *lastNameEdit;
+    QLineEdit *address1Edit;
+    QLineEdit *address2Edit;
+    QLineEdit *cityEdit;
+    QLineEdit *stateEdit;
+    QLineEdit *zipCodeEdit;
+    QLineEdit *phoneEdit;
+    QLineEdit *dobEdit;
+    QLineEdit *loginIdEdit;
+    QLineEdit *loginPassEdit;
+    QLineEdit *loginPassConfirmEdit;
 
     void setupUi(QDialog *newlogin)
     {
         if (newlogin->objectName().isEmpty())
             newlogin->setObjectName(QString::fromUtf8("newlogin"));
-        newlogin->resize(567, 417);
+        newlogin->resize(800, 465);
         label = new QLabel(newlogin);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(10, 10, 511, 21));
         groupBox = new QGroupBox(newlogin);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(10, 40, 551, 381));
+        groupBox->setGeometry(QRect(10, 30, 761, 411));
         layoutWidget = new QWidget(groupBox);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(200, 350, 239, 25));
+        layoutWidget->setGeometry(QRect(20, 350, 721, 61));
         horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        horizontalLayout->setContentsMargins(10, 10, 10, 10);
         newbakButton = new QPushButton(layoutWidget);
         newbakButton->setObjectName(QString::fromUtf8("newbakButton"));
+        newbakButton->setMaximumSize(QSize(85, 49));
 
         horizontalLayout->addWidget(newbakButton);
 
         newcreButton = new QPushButton(layoutWidget);
         newcreButton->setObjectName(QString::fromUtf8("newcreButton"));
+        newcreButton->setEnabled(true);
+        newcreButton->setMaximumSize(QSize(85, 49));
 
         horizontalLayout->addWidget(newcreButton);
 
         newcanButton = new QPushButton(layoutWidget);
         newcanButton->setObjectName(QString::fromUtf8("newcanButton"));
+        newcanButton->setMaximumSize(QSize(85, 49));
 
         horizontalLayout->addWidget(newcanButton);
 
-        layoutWidget1 = new QWidget(groupBox);
-        layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
-        layoutWidget1->setGeometry(QRect(30, 20, 471, 332));
-        verticalLayout = new QVBoxLayout(layoutWidget1);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        verticalLayout->setContentsMargins(0, 0, 0, 0);
-        horizontalLayout_13 = new QHBoxLayout();
-        horizontalLayout_13->setObjectName(QString::fromUtf8("horizontalLayout_13"));
-        label_2 = new QLabel(layoutWidget1);
+        widget = new QWidget(groupBox);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(30, 30, 721, 291));
+        horizontalLayout_2 = new QHBoxLayout(widget);
+        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        horizontalLayout_2->setSizeConstraint(QLayout::SetMaximumSize);
+        horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
+        verticalLayout_2 = new QVBoxLayout();
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        label_2 = new QLabel(widget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
 
-        horizontalLayout_13->addWidget(label_2);
+        verticalLayout_2->addWidget(label_2);
 
-        lineEdit = new QLineEdit(layoutWidget1);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
-
-        horizontalLayout_13->addWidget(lineEdit);
-
-
-        verticalLayout->addLayout(horizontalLayout_13);
-
-        horizontalLayout_12 = new QHBoxLayout();
-        horizontalLayout_12->setObjectName(QString::fromUtf8("horizontalLayout_12"));
-        label_3 = new QLabel(layoutWidget1);
+        label_3 = new QLabel(widget);
         label_3->setObjectName(QString::fromUtf8("label_3"));
 
-        horizontalLayout_12->addWidget(label_3);
+        verticalLayout_2->addWidget(label_3);
 
-        lineEdit_2 = new QLineEdit(layoutWidget1);
-        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
-
-        horizontalLayout_12->addWidget(lineEdit_2);
-
-
-        verticalLayout->addLayout(horizontalLayout_12);
-
-        horizontalLayout_10 = new QHBoxLayout();
-        horizontalLayout_10->setObjectName(QString::fromUtf8("horizontalLayout_10"));
-        label_4 = new QLabel(layoutWidget1);
+        label_4 = new QLabel(widget);
         label_4->setObjectName(QString::fromUtf8("label_4"));
 
-        horizontalLayout_10->addWidget(label_4);
+        verticalLayout_2->addWidget(label_4);
 
-        lineEdit_3 = new QLineEdit(layoutWidget1);
-        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
-
-        horizontalLayout_10->addWidget(lineEdit_3);
-
-
-        verticalLayout->addLayout(horizontalLayout_10);
-
-        horizontalLayout_11 = new QHBoxLayout();
-        horizontalLayout_11->setObjectName(QString::fromUtf8("horizontalLayout_11"));
-        label_13 = new QLabel(layoutWidget1);
+        label_13 = new QLabel(widget);
         label_13->setObjectName(QString::fromUtf8("label_13"));
 
-        horizontalLayout_11->addWidget(label_13);
+        verticalLayout_2->addWidget(label_13);
 
-        lineEdit_4 = new QLineEdit(layoutWidget1);
-        lineEdit_4->setObjectName(QString::fromUtf8("lineEdit_4"));
-
-        horizontalLayout_11->addWidget(lineEdit_4);
-
-
-        verticalLayout->addLayout(horizontalLayout_11);
-
-        horizontalLayout_9 = new QHBoxLayout();
-        horizontalLayout_9->setObjectName(QString::fromUtf8("horizontalLayout_9"));
-        label_5 = new QLabel(layoutWidget1);
+        label_5 = new QLabel(widget);
         label_5->setObjectName(QString::fromUtf8("label_5"));
 
-        horizontalLayout_9->addWidget(label_5);
+        verticalLayout_2->addWidget(label_5);
 
-        lineEdit_12 = new QLineEdit(layoutWidget1);
-        lineEdit_12->setObjectName(QString::fromUtf8("lineEdit_12"));
-
-        horizontalLayout_9->addWidget(lineEdit_12);
-
-
-        verticalLayout->addLayout(horizontalLayout_9);
-
-        horizontalLayout_8 = new QHBoxLayout();
-        horizontalLayout_8->setObjectName(QString::fromUtf8("horizontalLayout_8"));
-        label_6 = new QLabel(layoutWidget1);
+        label_6 = new QLabel(widget);
         label_6->setObjectName(QString::fromUtf8("label_6"));
 
-        horizontalLayout_8->addWidget(label_6);
+        verticalLayout_2->addWidget(label_6);
 
-        lineEdit_5 = new QLineEdit(layoutWidget1);
-        lineEdit_5->setObjectName(QString::fromUtf8("lineEdit_5"));
-
-        horizontalLayout_8->addWidget(lineEdit_5);
-
-
-        verticalLayout->addLayout(horizontalLayout_8);
-
-        horizontalLayout_7 = new QHBoxLayout();
-        horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
-        label_7 = new QLabel(layoutWidget1);
+        label_7 = new QLabel(widget);
         label_7->setObjectName(QString::fromUtf8("label_7"));
 
-        horizontalLayout_7->addWidget(label_7);
+        verticalLayout_2->addWidget(label_7);
 
-        lineEdit_6 = new QLineEdit(layoutWidget1);
-        lineEdit_6->setObjectName(QString::fromUtf8("lineEdit_6"));
-
-        horizontalLayout_7->addWidget(lineEdit_6);
-
-
-        verticalLayout->addLayout(horizontalLayout_7);
-
-        horizontalLayout_6 = new QHBoxLayout();
-        horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
-        label_8 = new QLabel(layoutWidget1);
+        label_8 = new QLabel(widget);
         label_8->setObjectName(QString::fromUtf8("label_8"));
 
-        horizontalLayout_6->addWidget(label_8);
+        verticalLayout_2->addWidget(label_8);
 
-        lineEdit_7 = new QLineEdit(layoutWidget1);
-        lineEdit_7->setObjectName(QString::fromUtf8("lineEdit_7"));
-
-        horizontalLayout_6->addWidget(lineEdit_7);
-
-
-        verticalLayout->addLayout(horizontalLayout_6);
-
-        horizontalLayout_5 = new QHBoxLayout();
-        horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
-        label_9 = new QLabel(layoutWidget1);
+        label_9 = new QLabel(widget);
         label_9->setObjectName(QString::fromUtf8("label_9"));
 
-        horizontalLayout_5->addWidget(label_9);
+        verticalLayout_2->addWidget(label_9);
 
-        lineEdit_8 = new QLineEdit(layoutWidget1);
-        lineEdit_8->setObjectName(QString::fromUtf8("lineEdit_8"));
-
-        horizontalLayout_5->addWidget(lineEdit_8);
-
-
-        verticalLayout->addLayout(horizontalLayout_5);
-
-        horizontalLayout_4 = new QHBoxLayout();
-        horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
-        label_10 = new QLabel(layoutWidget1);
+        label_10 = new QLabel(widget);
         label_10->setObjectName(QString::fromUtf8("label_10"));
 
-        horizontalLayout_4->addWidget(label_10);
+        verticalLayout_2->addWidget(label_10);
 
-        lineEdit_9 = new QLineEdit(layoutWidget1);
-        lineEdit_9->setObjectName(QString::fromUtf8("lineEdit_9"));
-
-        horizontalLayout_4->addWidget(lineEdit_9);
-
-
-        verticalLayout->addLayout(horizontalLayout_4);
-
-        horizontalLayout_3 = new QHBoxLayout();
-        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
-        label_11 = new QLabel(layoutWidget1);
+        label_11 = new QLabel(widget);
         label_11->setObjectName(QString::fromUtf8("label_11"));
 
-        horizontalLayout_3->addWidget(label_11);
+        verticalLayout_2->addWidget(label_11);
 
-        lineEdit_10 = new QLineEdit(layoutWidget1);
-        lineEdit_10->setObjectName(QString::fromUtf8("lineEdit_10"));
-
-        horizontalLayout_3->addWidget(lineEdit_10);
-
-
-        verticalLayout->addLayout(horizontalLayout_3);
-
-        horizontalLayout_2 = new QHBoxLayout();
-        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
-        label_12 = new QLabel(layoutWidget1);
+        label_12 = new QLabel(widget);
         label_12->setObjectName(QString::fromUtf8("label_12"));
 
-        horizontalLayout_2->addWidget(label_12);
-
-        lineEdit_11 = new QLineEdit(layoutWidget1);
-        lineEdit_11->setObjectName(QString::fromUtf8("lineEdit_11"));
-
-        horizontalLayout_2->addWidget(lineEdit_11);
+        verticalLayout_2->addWidget(label_12);
 
 
-        verticalLayout->addLayout(horizontalLayout_2);
+        horizontalLayout_2->addLayout(verticalLayout_2);
 
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        firstNameEdit = new QLineEdit(widget);
+        firstNameEdit->setObjectName(QString::fromUtf8("firstNameEdit"));
+
+        verticalLayout->addWidget(firstNameEdit);
+
+        lastNameEdit = new QLineEdit(widget);
+        lastNameEdit->setObjectName(QString::fromUtf8("lastNameEdit"));
+
+        verticalLayout->addWidget(lastNameEdit);
+
+        address1Edit = new QLineEdit(widget);
+        address1Edit->setObjectName(QString::fromUtf8("address1Edit"));
+
+        verticalLayout->addWidget(address1Edit);
+
+        address2Edit = new QLineEdit(widget);
+        address2Edit->setObjectName(QString::fromUtf8("address2Edit"));
+
+        verticalLayout->addWidget(address2Edit);
+
+        cityEdit = new QLineEdit(widget);
+        cityEdit->setObjectName(QString::fromUtf8("cityEdit"));
+
+        verticalLayout->addWidget(cityEdit);
+
+        stateEdit = new QLineEdit(widget);
+        stateEdit->setObjectName(QString::fromUtf8("stateEdit"));
+
+        verticalLayout->addWidget(stateEdit);
+
+        zipCodeEdit = new QLineEdit(widget);
+        zipCodeEdit->setObjectName(QString::fromUtf8("zipCodeEdit"));
+
+        verticalLayout->addWidget(zipCodeEdit);
+
+        phoneEdit = new QLineEdit(widget);
+        phoneEdit->setObjectName(QString::fromUtf8("phoneEdit"));
+
+        verticalLayout->addWidget(phoneEdit);
+
+        dobEdit = new QLineEdit(widget);
+        dobEdit->setObjectName(QString::fromUtf8("dobEdit"));
+
+        verticalLayout->addWidget(dobEdit);
+
+        loginIdEdit = new QLineEdit(widget);
+        loginIdEdit->setObjectName(QString::fromUtf8("loginIdEdit"));
+
+        verticalLayout->addWidget(loginIdEdit);
+
+        loginPassEdit = new QLineEdit(widget);
+        loginPassEdit->setObjectName(QString::fromUtf8("loginPassEdit"));
+
+        verticalLayout->addWidget(loginPassEdit);
+
+        loginPassConfirmEdit = new QLineEdit(widget);
+        loginPassConfirmEdit->setObjectName(QString::fromUtf8("loginPassConfirmEdit"));
+
+        verticalLayout->addWidget(loginPassConfirmEdit);
+
+
+        horizontalLayout_2->addLayout(verticalLayout);
+
+        layoutWidget->raise();
+        newbakButton->raise();
 
         retranslateUi(newlogin);
 

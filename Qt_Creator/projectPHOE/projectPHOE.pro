@@ -35,7 +35,11 @@ SOURCES += main.cpp\
     colordescr.cpp \
     acuityexam.cpp \
     acuityinstruc.cpp \
-    acuitydescr.cpp
+    acuitydescr.cpp \
+    keyboard/QKeyPushButton.cpp \
+    keyboard/widgetKeyBoard.cpp \
+    examplemyfocus.cpp \
+    tester.cpp
 
 HEADERS  += phoe.h \
     exammenu.h \
@@ -59,7 +63,11 @@ HEADERS  += phoe.h \
     colordescr.h \
     acuityexam.h \
     acuityinstruc.h \
-    acuitydescr.h
+    acuitydescr.h \
+    keyboard/QKeyPushButton.h \
+    keyboard/widgetKeyBoard.h \
+    examplemyfocus.h \
+    tester.h
 
 FORMS    += \
     exammenu.ui \
@@ -84,4 +92,5 @@ FORMS    += \
     colordescr.ui \
     acuityexam.ui \
     acuityinstruc.ui \
-    acuitydescr.ui
+    acuitydescr.ui \
+    tester.ui

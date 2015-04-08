@@ -23,6 +23,10 @@ INPUT(
 ./debug\acuityexam.o
 ./debug\acuityinstruc.o
 ./debug\acuitydescr.o
+./debug\QKeyPushButton.o
+./debug\widgetKeyBoard.o
+./debug\examplemyfocus.o
+./debug\tester.o
 ./debug\moc_phoe.o
 ./debug\moc_exammenu.o
 ./debug\moc_loginsuccess.o
@@ -46,4 +50,7 @@ INPUT(
 ./debug\moc_acuityexam.o
 ./debug\moc_acuityinstruc.o
 ./debug\moc_acuitydescr.o
+./debug\moc_QKeyPushButton.o
+./debug\moc_widgetKeyBoard.o
+./debug\moc_tester.o
 );

@@ -3925,11 +3925,61 @@ debug/consent.o: ../projectPHOE/consent.cpp ../projectPHOE/consent.h \
 		C:/Qt/5.4/mingw491_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.4/mingw491_32/include/QtGui/qtouchdevice.h \
 		ui_consent.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/QVariant \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QAction \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qaction.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qicon.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qactiongroup.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QApplication \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qapplication.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qcoreapplication.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qeventloop.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qguiapplication.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qinputmethod.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QButtonGroup \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qbuttongroup.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QCheckBox \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qcheckbox.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QHBoxLayout \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qboxlayout.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlayout.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qgridlayout.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QHeaderView \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qheaderview.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemview.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qframe.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qitemselectionmodel.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qstyleoption.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qvalidator.h \
+		C:/Qt/5.4/mingw491_32/include/QtCore/qregularexpression.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qslider.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractslider.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qstyle.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabbar.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qrubberband.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QPushButton \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qpushbutton.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QTextBrowser \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtextbrowser.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtextedit.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextdocument.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextoption.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextcursor.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextformat.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qpen.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QVBoxLayout \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QWidget \
 		../projectPHOE/phoe.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/QMainWindow \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qmainwindow.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
-		C:/Qt/5.4/mingw491_32/include/QtGui/qicon.h \
 		../projectPHOE/newlogin.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\consent.o ..\projectPHOE\consent.cpp
 
@@ -4219,11 +4269,18 @@ debug/fundusdescr.o: ../projectPHOE/fundusdescr.cpp ../projectPHOE/fundusdescr.h
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabbar.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qrubberband.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/QLabel \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlabel.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/QPushButton \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qpushbutton.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QTextBrowser \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtextbrowser.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtextedit.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextdocument.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextoption.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextcursor.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextformat.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qpen.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QVBoxLayout \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/QWidget \
 		../projectPHOE/fundusinstruc.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\fundusdescr.o ..\projectPHOE\fundusdescr.cpp
@@ -4662,11 +4719,18 @@ debug/oculardescr.o: ../projectPHOE/oculardescr.cpp ../projectPHOE/oculardescr.h
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabbar.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qrubberband.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/QLabel \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlabel.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/QPushButton \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qpushbutton.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QTextBrowser \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtextbrowser.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtextedit.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextdocument.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextoption.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextcursor.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextformat.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qpen.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QVBoxLayout \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/QWidget \
 		../projectPHOE/ocularinstruc.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\oculardescr.o ..\projectPHOE\oculardescr.cpp
@@ -5105,11 +5169,18 @@ debug/fielddescr.o: ../projectPHOE/fielddescr.cpp ../projectPHOE/fielddescr.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabbar.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qrubberband.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/QLabel \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlabel.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/QPushButton \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qpushbutton.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QTextBrowser \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtextbrowser.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtextedit.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextdocument.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextoption.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextcursor.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextformat.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qpen.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QVBoxLayout \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/QWidget \
 		../projectPHOE/fieldinstruc.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\fielddescr.o ..\projectPHOE\fielddescr.cpp
@@ -5840,11 +5911,18 @@ debug/colordescr.o: ../projectPHOE/colordescr.cpp ../projectPHOE/colordescr.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabbar.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qrubberband.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/QLabel \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlabel.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/QPushButton \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qpushbutton.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QTextBrowser \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtextbrowser.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtextedit.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextdocument.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextoption.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextcursor.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextformat.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qpen.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QVBoxLayout \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/QWidget \
 		../projectPHOE/colorinstruc.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\colordescr.o ..\projectPHOE\colordescr.cpp
@@ -6283,11 +6361,18 @@ debug/acuitydescr.o: ../projectPHOE/acuitydescr.cpp ../projectPHOE/acuitydescr.h
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabbar.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qrubberband.h \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/QLabel \
-		C:/Qt/5.4/mingw491_32/include/QtWidgets/qlabel.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/QPushButton \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qpushbutton.h \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QTextBrowser \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtextbrowser.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/qtextedit.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextdocument.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextoption.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextcursor.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qtextformat.h \
+		C:/Qt/5.4/mingw491_32/include/QtGui/qpen.h \
+		C:/Qt/5.4/mingw491_32/include/QtWidgets/QVBoxLayout \
 		C:/Qt/5.4/mingw491_32/include/QtWidgets/QWidget \
 		../projectPHOE/acuityinstruc.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\acuitydescr.o ..\projectPHOE\acuitydescr.cpp

@@ -7,6 +7,7 @@ colordescr::colordescr(QWidget *parent) :
     ui(new Ui::colordescr)
 {
     ui->setupUi(this);
+    this->showFullScreen();
 }
 
 colordescr::~colordescr()
@@ -17,6 +18,7 @@ colordescr::~colordescr()
 void colordescr::on_cdescrbakButton_clicked()
 {
     //back to exammenu.cpp
+    this->hide();
 }
 
 void colordescr::on_cdescrcontButton_clicked()

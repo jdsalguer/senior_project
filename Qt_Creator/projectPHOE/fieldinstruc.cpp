@@ -7,6 +7,7 @@ fieldinstruc::fieldinstruc(QWidget *parent) :
     ui(new Ui::fieldinstruc)
 {
     ui->setupUi(this);
+    this->showFullScreen();
 }
 
 fieldinstruc::~fieldinstruc()
@@ -24,4 +25,5 @@ void fieldinstruc::on_fieldinstrucbegButton_clicked()
 void fieldinstruc::on_fieldinstrucbakButton_clicked()
 {
     //back to fielddescr.cpp
+    this->hide();
 }

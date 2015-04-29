@@ -9,6 +9,10 @@ QT       += core gui sql
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = projectPHOE
+    target.files = projectPHOE
+    target.path = /home/root
+
+INSTALLS += target
 TEMPLATE = app
 
 
@@ -36,10 +40,9 @@ SOURCES += main.cpp\
     acuityexam.cpp \
     acuityinstruc.cpp \
     acuitydescr.cpp \
-    keyboard/QKeyPushButton.cpp \
-    keyboard/widgetKeyBoard.cpp \
-    examplemyfocus.cpp \
-    tester.cpp
+    keyboard.cpp \
+    examcomplete.cpp \
+    Camera.cpp
 
 HEADERS  += phoe.h \
     exammenu.h \
@@ -64,10 +67,9 @@ HEADERS  += phoe.h \
     acuityexam.h \
     acuityinstruc.h \
     acuitydescr.h \
-    keyboard/QKeyPushButton.h \
-    keyboard/widgetKeyBoard.h \
-    examplemyfocus.h \
-    tester.h
+    keyboard.h \
+    examcomplete.h \
+    Camera.h
 
 FORMS    += \
     exammenu.ui \
@@ -93,4 +95,14 @@ FORMS    += \
     acuityexam.ui \
     acuityinstruc.ui \
     acuitydescr.ui \
-    tester.ui
+    keyboard.ui \
+    examcomplete.ui
+
+INCLUDEPATH +=/usr/local/include
+
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../../../../Documents/opencvarm/opencv-2.4.10/build/lib/release/ -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_objdetect -lopencv_ts -lopencv_video -lopencv_photo -lopencv_gpu
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../../../../Documents/opencvarm/opencv-2.4.10/build/lib/debug/ -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_objdetect -lopencv_ts -lopencv_video -lopencv_photo -lopencv_gpu
+else:unix: LIBS += -L$$PWD/../../../../../Documents/opencvarm/opencv-2.4.10/build/lib/ -lopencv_calib3d -lopencv_contrib -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_highgui -lopencv_imgproc -lopencv_legacy -lopencv_ml -lopencv_objdetect -lopencv_ts -lopencv_video -lopencv_photo -lopencv_gpu
+
+INCLUDEPATH += $$PWD/../../../../../Documents/opencvarm/opencv-2.4.10/build/include
+DEPENDPATH += $$PWD/../../../../../Documents/opencvarm/opencv-2.4.10/build/include

@@ -7,6 +7,7 @@ fundusinstruc::fundusinstruc(QWidget *parent) :
     ui(new Ui::fundusinstruc)
 {
     ui->setupUi(this);
+    this->showFullScreen();
 }
 
 fundusinstruc::~fundusinstruc()
@@ -17,11 +18,15 @@ fundusinstruc::~fundusinstruc()
 void fundusinstruc::on_funinsbackButton_clicked()
 {
     //back to fundusdescr.cpp
+    this->hide();
 }
 
 void fundusinstruc::on_funinsbegButton_clicked()
 {
+    ui->funinsbegButton->setEnabled(false);
+    ui->funinsbegButton->setText("Completed");
     fundusexam Fundusexam;
     Fundusexam.setModal(true);
     Fundusexam.exec();
+
 }

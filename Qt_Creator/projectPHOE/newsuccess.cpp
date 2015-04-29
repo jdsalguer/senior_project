@@ -6,6 +6,7 @@ newsuccess::newsuccess(QWidget *parent) :
     ui(new Ui::newsuccess)
 {
     ui->setupUi(this);
+    this->showFullScreen();
 }
 
 newsuccess::~newsuccess()
@@ -16,4 +17,5 @@ newsuccess::~newsuccess()
 void newsuccess::on_cresuccontButton_clicked()
 {
     //back to phoe.cpp
+    this->hide();
 }

@@ -15,10 +15,16 @@ public:
     explicit phoe(QWidget *parent = 0);
     ~phoe();
 
+public slots:
+    void keySignal(QString text);
+
 private slots:
     void on_loginButton_clicked();
 
     void on_newButton_clicked();
+    void setText();
+
+    void on_kb_clicked();
 
 private:
     Ui::phoe *ui;

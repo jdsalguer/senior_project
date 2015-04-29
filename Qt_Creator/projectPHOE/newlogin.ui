@@ -30,9 +30,9 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>40</y>
-     <width>551</width>
-     <height>381</height>
+     <y>30</y>
+     <width>761</width>
+     <height>411</height>
     </rect>
    </property>
    <property name="title">
@@ -41,15 +41,33 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>20</x>
       <y>350</y>
-      <width>239</width>
-      <height>25</height>
+      <width>721</width>
+      <height>61</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="leftMargin">
+      <number>10</number>
+     </property>
+     <property name="topMargin">
+      <number>10</number>
+     </property>
+     <property name="rightMargin">
+      <number>10</number>
+     </property>
+     <property name="bottomMargin">
+      <number>10</number>
+     </property>
      <item>
       <widget class="QPushButton" name="newbakButton">
+       <property name="maximumSize">
+        <size>
+         <width>85</width>
+         <height>49</height>
+        </size>
+       </property>
        <property name="text">
         <string>&lt;- BACK</string>
        </property>
@@ -57,6 +75,15 @@
      </item>
      <item>
       <widget class="QPushButton" name="newcreButton">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>85</width>
+         <height>49</height>
+        </size>
+       </property>
        <property name="text">
         <string>CREATE</string>
        </property>
@@ -64,6 +91,12 @@
      </item>
      <item>
       <widget class="QPushButton" name="newcanButton">
+       <property name="maximumSize">
+        <size>
+         <width>85</width>
+         <height>49</height>
+        </size>
+       </property>
        <property name="text">
         <string>CANCEL</string>
        </property>
@@ -71,18 +104,21 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>20</y>
-      <width>471</width>
-      <height>332</height>
+      <y>30</y>
+      <width>721</width>
+      <height>291</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMaximumSize</enum>
+     </property>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_13">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
         <widget class="QLabel" name="label_2">
          <property name="text">
@@ -91,26 +127,12 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit"/>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_12">
-       <item>
         <widget class="QLabel" name="label_3">
          <property name="text">
           <string>                     Last Name :</string>
          </property>
         </widget>
        </item>
-       <item>
-        <widget class="QLineEdit" name="lineEdit_2"/>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_10">
        <item>
         <widget class="QLabel" name="label_4">
          <property name="text">
@@ -119,26 +141,12 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_3"/>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_11">
-       <item>
         <widget class="QLabel" name="label_13">
          <property name="text">
           <string>              Address Line 2 :</string>
          </property>
         </widget>
        </item>
-       <item>
-        <widget class="QLineEdit" name="lineEdit_4"/>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_9">
        <item>
         <widget class="QLabel" name="label_5">
          <property name="text">
@@ -147,26 +155,12 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_12"/>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_8">
-       <item>
         <widget class="QLabel" name="label_6">
          <property name="text">
           <string>                              State :</string>
          </property>
         </widget>
        </item>
-       <item>
-        <widget class="QLineEdit" name="lineEdit_5"/>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_7">
        <item>
         <widget class="QLabel" name="label_7">
          <property name="text">
@@ -175,26 +169,12 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_6"/>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_6">
-       <item>
         <widget class="QLabel" name="label_8">
          <property name="text">
           <string>                             Phone :</string>
          </property>
         </widget>
        </item>
-       <item>
-        <widget class="QLineEdit" name="lineEdit_7"/>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_5">
        <item>
         <widget class="QLabel" name="label_9">
          <property name="text">
@@ -203,26 +183,12 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_8"/>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_4">
-       <item>
         <widget class="QLabel" name="label_10">
          <property name="text">
           <string>                          Login ID :</string>
          </property>
         </widget>
        </item>
-       <item>
-        <widget class="QLineEdit" name="lineEdit_9"/>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
        <item>
         <widget class="QLabel" name="label_11">
          <property name="text">
@@ -231,26 +197,60 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_10"/>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <item>
         <widget class="QLabel" name="label_12">
          <property name="text">
           <string>Login Password Confirm :</string>
          </property>
         </widget>
        </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <widget class="QLineEdit" name="lineEdit_11"/>
+        <widget class="QLineEdit" name="firstNameEdit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lastNameEdit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="address1Edit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="address2Edit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="cityEdit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="stateEdit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="zipCodeEdit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="phoneEdit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="dobEdit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="loginIdEdit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="loginPassEdit"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="loginPassConfirmEdit"/>
        </item>
       </layout>
      </item>
     </layout>
    </widget>
+   <zorder>layoutWidget</zorder>
+   <zorder>newbakButton</zorder>
+   <zorder></zorder>
+   <zorder></zorder>
   </widget>
  </widget>
  <resources/>

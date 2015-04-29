@@ -23,6 +23,30 @@ private slots:
 
     void on_newcreButton_clicked();
 
+    void on_loginPassConfirmEdit_editingFinished();
+
+    void on_loginPassEdit_editingFinished();
+
+    void on_loginIdEdit_editingFinished();
+
+    void on_dobEdit_editingFinished();
+
+    void on_phoneEdit_editingFinished();
+
+    void on_zipCodeEdit_editingFinished();
+
+    void on_stateEdit_editingFinished();
+
+    void on_cityEdit_editingFinished();
+
+    void on_address2Edit_editingFinished();
+
+    void on_address1Edit_editingFinished();
+
+    void on_lastNameEdit_editingFinished();
+
+    void on_firstNameEdit_editingFinished();
+
 private:
     Ui::newlogin *ui;
 };

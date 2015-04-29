@@ -20,6 +20,10 @@ private slots:
 
     void on_consentbackButton_clicked();
 
+    void on_agreecheckBox_toggled(bool checked);
+
+    void on_disagreecheckBox_toggled(bool checked);
+
 private:
     Ui::consent *ui;
 };

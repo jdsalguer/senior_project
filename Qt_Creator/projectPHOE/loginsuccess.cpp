@@ -7,6 +7,7 @@ loginsuccess::loginsuccess(QWidget *parent) :
     ui(new Ui::loginsuccess)
 {
     ui->setupUi(this);
+    this->showFullScreen();
 }
 
 loginsuccess::~loginsuccess()
@@ -19,4 +20,5 @@ void loginsuccess::on_loginsucButton_clicked()
     exammenu Exammenu;
     Exammenu.setModal(true);
     Exammenu.exec();
+    this->hide();
 }

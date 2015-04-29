@@ -7,6 +7,7 @@ fielddescr::fielddescr(QWidget *parent) :
     ui(new Ui::fielddescr)
 {
     ui->setupUi(this);
+    this->showFullScreen();
 }
 
 fielddescr::~fielddescr()
